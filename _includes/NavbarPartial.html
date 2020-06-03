@@ -1,0 +1,112 @@
+<header class="header text-center">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navigation" class="collapse navbar-collapse flex-column">
+            <div class="profile-section pt-3 pt-lg-0">
+                <img class="profile-image mb-3 rounded-circle mx-auto" src="/assets/images/jhonathan.png"
+                    alt="image">
+                <h1 class="blog-name mb-0"><a href="{{ site.baseurl }}/">Jhonathan Ribeiro</a></h1>
+                
+                <!-- Botão da Pesquisa -->
+                <div id="search-container">
+                    <!-- Barra de Pesquisa -->
+                    <input type="text" id="search-input" placeholder="Pesquisar posts no blog..."
+                    onmouseover="inputSearchFocus()"
+                    onmouseout="inputSearchFocusChange()">
+                     <!-- Lista de resultados -->
+                    <ul id="results-container"></ul>
+                </div>
+
+    <div id="content-navbar">
+        <hr class="divider long">
+        <div class="bio mb-3">
+            Estudante de An&aacute;lise e desenvolvimento de sistemas, apaixonado por HTML, CSS, 
+            <a href="https://bit.ly/mdnjavascript" target="_blank"><span class="badge badge-warning p-1 badge-viasoft">JavaScript</span></a>
+            e todo seu ecossistema.
+        </div>
+    <!--Menu-->
+    <ul class="navbar-nav flex-column text-left">
+        <li class="nav-item">
+            <a class="nav-link text-center" href="{{ site.baseurl }}/">Home<span
+                    class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-center" href="snippets.html">Snippets</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-center ml-4" href="loja.html">
+                <var class="ml-4">Loja
+                    <sup class="bg-success">
+                        <small>Em breve</small>
+                    </sup>
+                </var>                
+            </a>
+        </li>
+        <style>
+            .bg-success {
+                padding: 4px;
+                margin-left: -4px;
+                border-radius: 8px;
+                background: #28a745!important;
+            }
+        </style>
+        <li class="nav-item">
+            <a class="nav-link text-center" href="about.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-center" href="contato.html">Contato</a>
+        </li>
+    </ul>
+    <!--Links Redes Sociais-->
+    <ul class="social-list list-inline py-3 mx-auto">
+        <li class="list-inline-item">
+            <a href="{{ site.twitter }}" target="_blank">
+                <i class="fab fa-twitter fa-fw"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="{{ site.linkedin }}"
+                target="_blank">
+                <i class="fab fa-linkedin-in fa-fw"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="{{ site.facebook }}"
+                target="_blank">
+                <i class="fab fa-facebook fa-fw"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="{{ site.instagram }}" target="_blank"><i
+                    class="fab fa-instagram fa-fw"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="{{ site.github }}" target="_blank"><i
+                    class="fab fa-github-alt fa-fw">
+                </i>
+            </a>
+        </li>
+    </ul>
+    </div>
+</div>
+</nav>
+</header>
+<script src="/assets/components/jquery/dist/jquery.min.js"></script>
+<script src="/assets/components/simple-jekyll-search/dest/simple-jekyll-search.js"></script>
+<script src="/assets/js/script.js"></script>
+<script>
+//ocultando conteudo da Navbar ao realizar pesquisa
+    function inputSearchFocus() {
+       document.getElementById('content-navbar').style.display = 'none';
+    }
+    function inputSearchFocusChange(){
+        document.getElementById('content-navbar').style.display = 'block';
+    }
+</script>
+
+
+

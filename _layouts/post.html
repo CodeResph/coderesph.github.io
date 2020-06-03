@@ -1,0 +1,23 @@
+{% include HeaderPartial.html %}
+{% include NavbarPartial.html %}
+<div class="main-wrapper">
+	
+	<article class="blog-post px-3 py-5 p-md-5">
+		<div class="container">
+			<header class="blog-post-header">
+				<h2 class="title mb-2">{{ page.title }}</h2>
+				<div class="meta mb-3"><span class="date">Publicado em {{ page.date | date: "%-d-%m-%Y &#2553; %r" }}</span>
+				<!-- <span class="time"></span><span class="comment"><a href="#">4 comments</a></span></div> -->
+			</header>
+		</div>
+	</article>
+
+	{{content}}
+	
+</section>
+	<style>.footer {margin-top: 8.5rem;}</style>
+	{% include FooterPartial.html %}
+	{% include ScriptsPartial.html %}
+</body>
+</html> 
+

@@ -1,0 +1,25 @@
+<section class="blog-list px-3 py-5 p-md-5">
+    <div class="container">
+        <!-- {% assign post = site.posts | sort: 'date' | reverse %} -->
+        {% for post in site.posts %}
+            <div class="item py-5">
+                <div class="media post">
+                    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" 
+                    src="{{ post.thumbnail }}" alt="image">
+                    <div class="media-body">
+                        <h3 class="title mb-1"><a href="{{post.url | prepend: site.baseurl}}">
+                            {{post.title}}</a></h3>
+                        <div class="meta mb-1">
+                            <div class="date">
+                                <time datetime="{{ post.date | date_to_xmlschema }}">
+                                    {% include data.html date=post.date %}
+                                </time>
+                                ─ {{ site.author }}
+                            </div>
+                        <div class="intro">{{post.description}}</div>
+                        <a class="more-link" href="{{post.url | prepend: site.baseurl}}">
+                            Continue lendo... &rarr;</a>
+                    </div><!--//media-body-->
+                </div><!--//media-->
+            </div><!--//item-->
+        {% endfor %}

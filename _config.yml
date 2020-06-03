@@ -1,0 +1,21 @@
+
+title: Jhonathan Ribeiro
+email: coderesph@gmail.com
+author: Jhonathan Ribeiro
+description: >- # this means to ignore newlines until "baseurl:"
+  Bem vindo ao meu blog! Aqui você encontra artigos sobre tecnologia, ganhar dinheiro online,
+  dicas, snippets e muito mais. FIque por dentro de todas as nossas novidades, se inscreva em 
+  nossa Newsletter. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+facebook: https://www.facebook.com/Jhonathanjbr
+github:  https://github.com/JhonathanRibeiro
+instagram: https://www.instagram.com/jhonathanrjb
+twitter: https://twitter.com/Jhonathanjbr
+linkedin: https://www.linkedin.com/in/jhonathan-ribeiro
+# Build settings
+# Exibe somente o nome do post na url e sem .html
+permalink: /:title/
+theme: minima
+plugins:
+  - jekyll-feed

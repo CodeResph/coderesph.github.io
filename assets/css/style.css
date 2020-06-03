@@ -1,0 +1,155 @@
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+.header {
+    background: linear-gradient(150deg,rgba(19, 106, 138, 0.63) 30%,rgba(38, 120, 113, 0.76) 70%) 0 0/cover fixed,url("../images/cover.jpg") center/cover no-repeat fixed!important;
+    z-index: 999;
+}
+a {
+    color: #223142;
+}
+a.link {
+    text-decoration: none!important;
+}
+a.nav-link.text-center {
+    cursor: pointer;
+}
+.profile-section .profile-image {
+    border: 3px solid #24bfcf;
+    height: 133px;
+}
+.divider.long {
+    width: 30%;
+}
+.divider {
+    margin: 10px auto;
+    border-top: 1px solid rgba(255,255,255,.14);
+}
+hr {
+    border: none;
+}
+a.nav-link.text-center:hover {
+    color: #24bfcf!important;
+    text-decoration: none!important;
+}
+#footer-portfolio {
+  width:100%;
+  height:40px;
+  position: justify;
+  bottom:0;
+  left:0;
+  text-align: center;
+  clear: both;
+}
+/* Estilização do botão Search */
+ul#results-container {
+    list-style: none;
+    padding: 0;
+    width: 84%;
+    margin: 0px 20px;
+    float: left;
+    background: white;
+    text-transform: inherit;
+}
+ul#results-container li {
+    margin-bottom: 10px;
+    border-bottom-color: tomato;
+}
+input[type=text]{outline:none}
+input#search-input{
+    border-bottom: none;
+}
+/* rodap&eacute; do portfolio */
+#footer-portfolio small {
+    margin-left: 320px;
+}
+/* alinhamento dos cards do portfolio */
+#content-portfolio {
+    margin-left: 0px;
+}
+.theme-bg-dark {
+    background: linear-gradient(150deg,rgba(10, 76, 101, 0.91) 30%,rgb(54, 99, 95) 70%)!important;
+}
+.btn-news {
+    background: linear-gradient(150deg, rgba(10, 76, 101, 0.91) 30%, rgba(15, 113, 104, 0.98) 70%) !important
+}
+.blog-nav .nav-link {
+    background: linear-gradient(150deg, rgba(11, 94, 125, 0.91) 30%, rgba(18, 117, 121, 0.9) 70%) !important;
+}
+.about-image {
+    width: 100%;
+    padding: 60px;
+    height: 363px;
+    margin-top: -48px;
+    background: linear-gradient(150deg,rgba(10, 76, 101, 0.91) 30%,rgba(10, 99, 91, 0.52) 70%);
+    background-blend-mode: screen;
+    color: white;
+}
+h5.text-right.author {
+    margin-top: 76px;
+}
+/* texto do header sobre mim */
+figure.about-image h2, h5 {
+    color: #fff!important;
+    margin-bottom: 0;
+    margin-top: 48px;
+}
+/* ==================== */
+/* Config Product Cards */
+/* ==================== */
+.models {
+    display: none;
+}
+.card {
+    width: 12.3rem!important;
+    box-shadow: 4px 5px 14px #dddd;
+    border: none;
+    /* margin: 20px; */
+}  
+.card:hover {
+box-shadow: 1px 1px 20px -4px rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+}  
+.main-wrapper .container {
+    max-width: 1010px!important;
+}
+.card-body {
+    padding: 8px!important;
+    text-align: center!important;
+}
+.card-body a {
+    color: white!important;
+    line-height: 30px;
+}
+.fnt-price {
+    font-size: 20px;
+    padding: 0px;
+}
+.price {
+    width: 105px;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+/* anima&ccedil;&atilde;o pulsar no span javascript */
+.badge {
+    animation: pulse 0.7s infinite;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: pulse;
+    color: white!important;
+    font-size: 13px;
+    font-weight: bold;
+}
+@keyframes pulse {
+	0%   {box-shadow: 0px 0px 0px 0px rgb(51, 252, 1);   }
+	70%  {box-shadow: 0px 0px 0px 5px rgba(131, 185, 61, 0); }
+	100% {box-shadow: 0px 0px 0px 0px rgba(123,172,59,0); }
+}
